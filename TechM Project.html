@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+.header{
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.middle_header{
+  display: flex;
+}
+.first h2{
+  margin-top: 12px;  
+}
+.middle_header h5{
+  margin-top: 20px;
+}
+.versions h2{
+  margin-top: 0px;
+  margin-left: 91px;
+}
+.versions h4{
+  margin-left: 57px;
+  color: rgb(55, 124, 204);
+}
+.versions h5{
+  margin-left: 46px;
+}
+.middle_header_border{
+  border-bottom: 2.8px solid rgb(204, 21, 21);
+}
+.underline{
+  border-bottom: 3px solid black;
+}
+.underline2{
+  border-bottom: 1px solid black;
+}
+.subheader{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+}
+.dbnames{
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  display: flex;
+  margin-top: 5px;
+}
+.textbox{
+  background-color: rgb(238, 235, 235);
+  width: 250px;
+  height: 120px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 33px;
+}
+</style>
+</head>
+<body>
+  
+    <div class="row header">
+      <div class="col-sm-6 first middle_header">
+        <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple112/v4/9c/25/b5/9c25b5a5-cc09-7b7d-198c-4f03801f483b/AppIcon-1x_U007emarketing-0-7-0-0-85-220.png/1024x1024bb.png" alt="logo" style="width:40px;height:40px;margin-left:60px;margin-top:7px;">
+        <h2>DB Automation</h2>
+      </div>
+      <div class="col-sm-4 middle_header">
+        <div class="col-sm-2">
+          <h5>Upgrade</h5>
+        </div>
+        <div class="col-sm-2 middle_header_border">
+          <h5>Patch</h5>
+        </div>
+        <div class="col-sm-2">
+          <a href=""><i class="fa fa-search" style="font-size: 15px; margin-top: 19px; margin-left: 25px; color:white;"></i></a>
+        </div>
+      </div>
+      <div class="col-sm-1 middle_header">
+        <h5>Sign Out</h5>
+        <a href=""><i class="fa fa-bell" style="font-size: 15px; margin-top: 20px; margin-left: 9px; color:white;"></i></a>
+      </div>
+    </div>
+  
+  
+  <div class="container">
+    <div class="row subheader underline">
+      <div class="col-sm-11">
+        <h2>Overall Summary</h2>
+      </div>
+      <div class="col-sm-1">
+        <a href=""><i class="fa fa-search" style="font-size: 18px; margin-top: 22px; color:black;"></i></a>
+        <a href="file:///C:/Users/USER/Desktop/Project%201/screen%202.html"><i class="fa fa-filter" style="font-size: 22px; margin-top: 20px; margin-left: 27px; color:black;"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row subheader underline2">
+      <div class="col-sm-1 dbnames middle_header_border">
+        <h4>&nbsp;Oracle</h4>
+      </div>
+      <div class="col-sm-1 dbnames">
+        <h4>Casandra</h4>
+      </div>
+      <div class="col-sm-1 dbnames">
+        <h4>&nbsp;&nbsp;MySQL</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+     <div class="row subheader versions">
+        <div class="col-sm-3 textbox">
+          <h2>20</h2>
+          <h4>Ver. 19.3.0.0</h4>
+          <h5>Patch Ver. Jan 2022</h5>
+        </div>
+        <div class="col-sm-3 textbox">
+          <h2>15</h2>
+          <h4>Ver. 12.1.0.2</h4>
+          <h5>Patch Ver. Jan 2022</h5>
+        </div>
+        <div class="col-sm-3 textbox">
+          <h2>19</h2>
+          <h4>Ver. 12.1.0.2</h4>
+          <h5>Patch Ver. Apr 2021</h5>
+        </div>
+        <div class="col-sm-3 textbox">
+          <h2>90</h2>
+          <h4>Ver. 11.2.0.4</h4>
+          <h5>Patch Ver. July 2021</h5>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
