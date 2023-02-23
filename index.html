@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ISP Registration</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+        <style>
+        
+              table, th, td {
+                  border: 1px solid #ccc;
+              border-collapse: collapse;
+              padding: 12px 20px;
+              background-color: white;
+              text-align: center;
+              }
+              .center {
+	             margin-left:auto;
+	            margin-right: auto;
+                  width: 40%;
+                  padding: 9%;
+              }
+              h1, h2{
+                  text-align: center;
+              }
+             
+              .input{
+                  width: 100%;
+                  padding: 12px 20px;
+                  margin: 8px 0;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+              }
+              input[type=submit] {
+                  width: 100%;
+                  padding: 14px 20px;
+                  margin-top: 20px;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  color: white;
+                  background-color: rgb(17, 68, 116);
+                  font-size: large;
+                  opacity: 0.9;
+              }
+  
+              input[type=submit]:hover {
+                  opacity: 1;
+              }
+              
+              input[type=radio]{
+                  margin-right: 10px;
+              }
+              div {
+              	margin: auto;
+                  border-radius: 5px;
+                  backdrop-filter: blur(100px);
+                  padding: 20px;
+              }
+              
+              .bg-img {
+                  
+                  background-image: url("5180059.jpg");
+                  background-size:100%;            
+              }
+              input:invalid {
+                  background-color: ivory;
+                  border: none;
+                  outline: 2px solid red;
+              }
+              span {
+                  color: red;
+              }
+        </style>
+        <script>
+        function showPasswordfunction(){
+        	var show = document.getElementById('password');
+            if (show.type== 'password'){
+                show.type='text';
+            }
+            else{
+                show.type='password';
+            }
+        }
+        document.getElementById('check').onclick = function() {
+            if ( this.checked ) {
+               document.getElementById('password').type = "text";
+            } else {
+               document.getElementById('password').type = "password";
+            }
+        };
+        </script>
+    </head>
+    <body class="bg-img">
+        <div class="center">
+            <h1>ISP Registration</h1>
+            <h2>Personal Information</h2>
+            <form action="login2" method="post" >
+                <div>
+	                <label for="username">Username<span> *</span></label>
+	                <input class="input" type="text" id="username" name="username" required><br><br>
+	                
+	                <label for="password">Password<span> *</span></label>
+	                <input class="input" type="password" id="password" name="password" required><br><br>
+            		<input type="checkbox" id="check" onclick="showPasswordfunction()">Show Password
+            		<input type="submit" class="submit" value="Submit">
+            		
+            	</div>
+            </form>
+        </div>
+    </body>
+</html>
